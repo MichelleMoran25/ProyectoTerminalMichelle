@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2020_07_15_at_2_10_54_pm"
+    tools:context=".RegistroAlumno">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="244dp"
+        android:layout_height="56dp"
+        android:fontFamily="monospace"
+        android:text="@string/crear_cuenta"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageView
+        android:id="@+id/foto_perfil_alu"
+        android:layout_width="119dp"
+        android:layout_height="116dp"
+        android:background="@mipmap/ic_profile"
+        android:contentDescription="@string/foto_perfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="340dp"
+        android:layout_height="324dp"
+        android:background="#4B000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nombre_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/Nombre"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/matricula_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/matricula"
+                android:inputType="number"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edad_alumno"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/edad_alummno"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/carrera_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/carrera"
+                android:inputType="textPersonName"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/telefono_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/telefono"
+                android:inputType="number"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/email_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/contraseña_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/contraseña"
+                android:inputType="textPersonName"
+                android:textColorHint="#FFFFFF" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/habilidades_alumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Habilidades"
+                android:textColorHint="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_registro_alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="656dp"
+        android:background="@drawable/custum_botton_white"
+        android:onClick="onClick"
+        android:text="@string/registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

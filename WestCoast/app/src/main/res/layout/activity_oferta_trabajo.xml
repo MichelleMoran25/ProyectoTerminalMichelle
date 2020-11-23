@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2020_07_20_at_12_05_41_pm__5_"
+    tools:context=".OfertaTrabajo">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="268dp"
+        android:layout_height="69dp"
+        android:fontFamily="cursive"
+        android:hint="@string/nueva_oferta"
+        android:text="@string/nueva_oferta"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="348dp"
+        android:layout_height="277dp"
+        android:background="#4B000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/codi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/codi"
+                android:inputType="textPersonName"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/nombreOferta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nameOferta"
+                android:inputType="textPersonName"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/nombreEmpresaOfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/nombre_empresa"
+                android:inputType="textPersonName"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/ubicacionEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ubicacion"
+                android:inputType="textPersonName"
+                android:textColorHint="#FFFFFF" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/descripcion_oferta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripcion_oferta"
+                android:textColorHint="#FBFAFA" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/ContactoOferta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contacto_oferta"
+                android:textColorHint="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/agregar_oferta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:background="@drawable/custum_botton_white"
+        android:onClick="onClick"
+        android:text="@string/agregar_oferta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mostrar_oferta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:background="@drawable/custum_botton_white"
+        android:contentDescription="@string/visualizar_oferta"
+        android:onClick="mostrarOfertas"
+        android:text="Configurar Oferta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toEndOf="@+id/agregar_oferta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

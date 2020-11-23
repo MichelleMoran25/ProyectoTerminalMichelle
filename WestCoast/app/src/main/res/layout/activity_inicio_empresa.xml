@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fitsSystemWindows="true">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewalu"
+        android:layout_width="405dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786"
+        tools:listitem="@layout/item_alumno" />
+
+    <Button
+        android:id="@+id/nueva_oferta"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        android:background="@mipmap/ic_nueva_oferta"
+        android:contentDescription="@string/ic_nueva_oferta"
+        android:onClick="oferta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/perfil_empresa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <Button
+        android:id="@+id/perfil_empresa"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:background="@mipmap/ic_perfil"
+        android:contentDescription="@string/ic_perfil"
+        android:onClick="update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/salir_app"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994" />
+
+    <Button
+        android:id="@+id/encuesta_alumno"
+        android:layout_width="59dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_calificar"
+        android:contentDescription="@string/ic_calificar"
+        android:onClick="ratingAlumno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nueva_oferta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <Button
+        android:id="@+id/salir_app"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:background="@mipmap/ic_salir"
+        android:contentDescription="@string/ic_salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
+
+    <View
+        android:id="@+id/view_empresa"
+        android:layout_width="406dp"
+        android:layout_height="211dp"
+        android:layout_marginBottom="560dp"
+        android:background="@drawable/whatsapp_image_2020_07_20_at_12_05_41_pm__5_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_empresa"
+        android:layout_width="100dp"
+        android:layout_height="99dp"
+        android:background="@mipmap/ic_profile"
+        android:contentDescription="@string/foto_perfil"
+        app:layout_constraintBottom_toBottomOf="@+id/encuesta_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187"
+        app:srcCompat="@drawable/custum_botton_white" />
+
+    <Button
+        android:id="@+id/config_oferta"
+        android:layout_width="56dp"
+        android:layout_height="59dp"
+        android:background="@drawable/ic_llave_foreground"
+        android:onClick="config_oferta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/salir_app"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/encuesta_alumno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="64dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_find_foreground"
+        android:onClick="find"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

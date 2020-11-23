@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".inicio_alumno">
+
+    <Button
+        android:id="@+id/salir_alumno"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:background="@mipmap/ic_salir"
+        android:contentDescription="@string/ic_salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/encuesta_empresa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicleyViewOferta"
+        android:layout_width="370dp"
+        android:layout_height="344dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
+        tools:listitem="@layout/item_oferta" />
+
+    <Button
+        android:id="@+id/perfil_alumno"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:background="@mipmap/ic_perfil"
+        android:contentDescription="@string/ic_perfil"
+        android:onClick="perfilalumno2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
+
+    <Button
+        android:id="@+id/encuesta_empresa"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:background="@mipmap/ic_calificar"
+        android:contentDescription="@string/ic_calificar"
+        android:onClick="bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/perfil_alumno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view_alumno"
+        android:layout_width="414dp"
+        android:layout_height="227dp"
+        android:layout_marginBottom="548dp"
+        android:background="@drawable/whatsapp_image_2020_07_20_at_12_05_41_pm__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/foto_alumno"
+        android:layout_width="104dp"
+        android:layout_height="105dp"
+        android:background="@mipmap/ic_perfil"
+        android:contentDescription="@string/foto_perfil"
+        app:layout_constraintBottom_toTopOf="@+id/recicleyViewOferta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_alumno"
+        app:layout_constraintVertical_bias="0.893"
+        app:srcCompat="@drawable/custum_botton_white" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:background="@drawable/ic_find_foreground"
+        android:onClick="find"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/salir_alumno"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/encuesta_empresa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

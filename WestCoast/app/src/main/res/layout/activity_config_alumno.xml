@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2020_07_15_at_3_49_17_pm__8_"
+    tools:context=".config_alumno">
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="471dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/uam_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/contraseña"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/buscar_matricula"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custum_botton_white"
+                android:onClick="OnClick"
+                android:text="VALIDAR" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/uam_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/uam_carrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/carrera"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/uam_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edad_alummno"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/uam_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/telefono"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/uam_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textPersonName" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/uam_habilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Habilidades" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/uam_intereses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/intereses" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/act_alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:background="@drawable/custum_botton_white"
+        android:onClick="OnClick"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/elim_alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:background="@drawable/custum_botton_white"
+        android:onClick="OnClick"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Configuración"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
